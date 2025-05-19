@@ -76,7 +76,7 @@ public class Vision {
   public void loop() {
     if (hasTarget()) {
         
-        System.out.println(new Pose2d().getX());
+        System.out.println("X: " + getBestTarget().getBestCameraToTarget().getX() + "  Y: " + getBestTarget().getBestCameraToTarget().getX());
     }
     // SmartDashboard.putBoolean("Has Target", hasTarget());
     // SmartDashboard.putNumber("Yaw to Target", getYawToTarget());
